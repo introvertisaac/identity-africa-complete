@@ -62,7 +62,7 @@ function Card({ src, alt, title, text }) {
       </div>
       <div className="p-4 flex flex-col justify-end flex-grow">
         <h3 className="text-2xl font-satoshi font-extrabold mb-2">{title}</h3>
-        <p className="text-black font-satoshi text-base font-bold">
+        <p className="text-black font-satoshi text-base">
           {text}
         </p>
       </div>
