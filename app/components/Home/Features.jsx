@@ -60,9 +60,9 @@ function Card({ src, alt, title, text }) {
           className="w-full h-full object-cover md:h-72"
         />
       </div>
-      <div className="p-4 flex flex-col justify-end">
+      <div className="p-4 flex flex-col justify-end flex-grow">
         <h3 className="text-2xl font-satoshi font-extrabold mb-2">{title}</h3>
-        <p className="text-black font-satoshi text-base">
+        <p className="text-black font-satoshi text-base font-bold">
           {text}
         </p>
       </div>
