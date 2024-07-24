@@ -71,7 +71,11 @@ const Footer = () => {
                 </ul>
               )}
               {section.email && (
-                <p className='mb-2'>Email Address: <a href={`mailto:${section.email}`} className="hover:underline">{section.email}</a></p>
+                <div className='space-y-2'>
+                  <p>Email Address: <a href={`mailto:${section.email}`} className="hover:underline">{section.email}</a></p>
+                  <p>Phone Number: {section.content[1]}</p>
+                  <p>Physical Address: {section.content[2]}</p>
+                </div>
               )}
             </div>
           ))}
