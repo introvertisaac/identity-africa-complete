@@ -53,7 +53,7 @@ export default function Features() {
 function Card({ src, alt, title, text }) {
   return (
     <div className="bg-white p-3 rounded-lg shadow-lg mb-4 flex flex-col h-auto">
-      <div className="rounded-lg overflow-hidden flex-shrink-0" style={{ height: '200px' }}>
+      <div className="rounded-lg overflow-hidden flex-shrink-0" style={{ height: '240px' }}>
         <img
           src={src}
           alt={alt}
