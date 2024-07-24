@@ -1,0 +1,33 @@
+/* fonts.css */
+
+/* Recoleta Sans */
+/* @font-face {
+  font-family: 'Recoleta Sans';
+  src: url('/fonts/recoleta_sans_st-webfont.woff2') format('woff2'),
+       url('/fonts/recoleta_sans_st-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* Recoleta Regular */
+@font-face {
+  font-family: 'Recoleta';
+  src: url('/fonts/Recoleta-Regular.woff2') format('woff2'),
+       url('/fonts/Recoleta-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*  */
+
+/* Satoshi Regular */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
