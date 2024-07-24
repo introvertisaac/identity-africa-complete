@@ -52,15 +52,15 @@ export default function Features() {
 
 function Card({ src, alt, title, text }) {
   return (
-    <div className="bg-white p-3 rounded-lg shadow-lg mb-4 flex flex-col h-auto md:h-96">
-      <div className="rounded-lg overflow-hidden flex-grow">
+    <div className="bg-white p-3 rounded-lg shadow-lg mb-4 flex flex-col h-auto">
+      <div className="rounded-lg overflow-hidden flex-shrink-0" style={{ height: '200px' }}>
         <img
           src={src}
           alt={alt}
-          className="w-full h-full object-cover md:h-72"
+          className="w-full h-full object-cover"
         />
       </div>
-      <div className="p-4 flex flex-col justify-end flex-grow">
+      <div className="p-4 flex flex-col justify-start flex-grow">
         <h3 className="text-2xl font-satoshi font-extrabold mb-2">{title}</h3>
         <p className="text-black font-satoshi text-base">
           {text}
