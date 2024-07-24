@@ -59,7 +59,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="md:col-span-2 text-left md:mr-2">
-            <h3 className="font-semibold mb-5">Quick Links</h3>
+            <h3 className="font-extrabold mb-5">Quick Links</h3>
             <ul className="space-y-6">
               <li><a href="/about" className="hover:underline">About Us</a></li>
               <li><a href="/products" className="hover:underline">Products & Solutions</a></li>
@@ -67,14 +67,14 @@ const Footer = () => {
               <li><a href="/developers" className="hover:underline">Get in touch</a></li>
             </ul>
           </div>
-          <div className="md:col-span-2 text-left md:mr-8">
-            <h3 className="font-semibold mb-3">Connect With Us</h3>
+          <div className="md:col-span-2 text-left md:mr-8 md:-mr-8">
+            <h3 className="font-extrabold mb-3">Connect With Us</h3>
             <ul className="space-y-2">
               <li><a href="https://linkedin.com/identityafrica" className="hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
-          <div className="md:col-span-4 text-left">
-            <h3 className="font-semibold mb-3">Contact</h3>
+          <div className="md:col-span-4 md:pl-20 md:-pr-14 text-left">
+            <h3 className="font-extrabold mb-3">Contact</h3>
             <div className='space-y-6'>
               <p>Email Address: <br/> <a href="mailto:info@identifyafrica.io" className="hover:underline">info@identifyafrica.io</a></p>
               <p>Phone Number:<br/>  +254 722 273 324</p>
