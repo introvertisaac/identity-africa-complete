@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
@@ -57,12 +57,12 @@ function Card({ src, alt, title, text }) {
         <img
           src={src}
           alt={alt}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover md:h-72"
         />
       </div>
       <div className="p-4 flex flex-col justify-end">
-        <h3 className="text-2xl font-bold mb-2">{title}</h3>
-        <p className="text-black text-base">
+        <h3 className="text-2xl font-satoshi font-extrabold mb-2">{title}</h3>
+        <p className="text-black font-satoshi text-base">
           {text}
         </p>
       </div>
