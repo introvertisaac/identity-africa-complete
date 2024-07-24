@@ -51,10 +51,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-4 text-left md:mr-8">
             <img src="/white-logo.png" alt="Identify Africa" className="h-20 mb-4" />
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               We aim to establish a global benchmark in secure identity verification and data validation, enhancing trust and security across digital interactions and empowering businesses to thrive in the African market, one verification at a time.
             </p>
-            <p className="mt-2">
+            <p className="mt-4">
               Licensed by <a href="https://odpc.go.ke" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">ODPC</a>
             </p>
           </div>
