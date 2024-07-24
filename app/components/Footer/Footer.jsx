@@ -48,37 +48,39 @@ const Footer = () => {
   return (
     <footer className="bg-[#2E1607] text-white w-full md:mt-10 font-satoshi">
       <div className="px-6 md:px-20 py-8 md:mr-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {footerSections.map((section, index) => (
-            <div key={index} className="text-left md:mr-8">
-              {section.logo && <img src={section.logo} alt="Identify Africa" className="h-20 mb-4" />}
-              <h3 className="font-semibold mb-3">{section.title}</h3>
-              {section.content && section.content.map((paragraph, pIndex) => (
-                <p key={pIndex} className={`mt-${pIndex === 0 ? '4' : '2'}`}>
-                  {paragraph}
-                  {section.link && pIndex === section.content.length - 1 && (
-                    <> <a href={section.link.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">{section.link.text}</a></>
-                  )}
-                </p>
-              ))}
-              {section.links && (
-                <ul className="space-y-4">
-                  {section.links.map((link, lIndex) => (
-                    <li key={lIndex}>
-                      <a href={link.url} className="hover:underline" target={link.url.startsWith('http') ? "_blank" : "_self"} rel={link.url.startsWith('http') ? "noopener noreferrer" : ""}>{link.text}</a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              {section.email && (
-                <div className='space-y-2'>
-                  <p>Email Address: <a href={`mailto:${section.email}`} className="hover:underline">{section.email}</a></p>
-                  <p>Phone Number: {section.content[1]}</p>
-                  <p>Physical Address: {section.content[2]}</p>
-                </div>
-              )}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="md:col-span-4 text-left md:mr-8">
+            <img src="/white-logo.png" alt="Identify Africa" className="h-20 mb-4" />
+            <p className="mt-4">
+              We aim to establish a global benchmark in secure identity verification and data validation, enhancing trust and security across digital interactions and empowering businesses to thrive in the African market, one verification at a time.
+            </p>
+            <p className="mt-2">
+              Licensed by <a href="https://odpc.go.ke" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">ODPC</a>
+            </p>
+          </div>
+          <div className="md:col-span-2 text-left md:mr-2">
+            <h3 className="font-semibold mb-5">Quick Links</h3>
+            <ul className="space-y-6">
+              <li><a href="/about" className="hover:underline">About Us</a></li>
+              <li><a href="/products" className="hover:underline">Products & Solutions</a></li>
+              <li><a href="/developers" className="hover:underline">Developers</a></li>
+              <li><a href="/developers" className="hover:underline">Get in touch</a></li>
+            </ul>
+          </div>
+          <div className="md:col-span-2 text-left md:mr-8">
+            <h3 className="font-semibold mb-3">Connect With Us</h3>
+            <ul className="space-y-2">
+              <li><a href="https://linkedin.com/identityafrica" className="hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div className="md:col-span-4 text-left">
+            <h3 className="font-semibold mb-3">Contact</h3>
+            <div className='space-y-6'>
+              <p>Email Address: <br/> <a href="mailto:info@identifyafrica.io" className="hover:underline">info@identifyafrica.io</a></p>
+              <p>Phone Number:<br/>  +254 722 273 324</p>
+              <p>Physical Address: <br/> The Address, Muthangari Drive, Nairobi, Kenya</p>
             </div>
-          ))}
+          </div>
         </div>
       </div>
       <div className="bg-custom-white text-black w-full">
